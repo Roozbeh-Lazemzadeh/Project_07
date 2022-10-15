@@ -1,0 +1,148 @@
+:root {
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* fonts import */
+
+@font-face {
+	font-family: octinSportsRg;
+	src: url("./fonts/octinSportsRg.ttf");
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(79 106 149);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	border: 1px solid rgb(190, 190, 190);
+	background-color: white;
+	width: 90%;
+	height: auto;
+	margin: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	border-radius: 0.7em;
+}
+h3 {
+	font-size: 16px;
+}
+
+#todo_title {
+	width: 90%;
+	height: 100%;
+	color: rgb(118, 118, 118);
+	border: 0.5px solid rgb(190, 190, 190);
+	padding: 1.3em 1.5em;
+	font-size: 1rem;
+	border-radius: 0.5em;
+	transition: 0.1s;
+	outline: none;
+	font-weight: 1.5rem;
+}
+
+#todo_title:focus {
+	border: 0.5px solid rgb(108, 128, 216);
+	transition: 0.1s;
+}
+
+#form {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+#btn {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	cursor: pointer;
+	transition: 0.15s ease-in-out;
+	font-weight: 1.5rem;
+	font-size: 1rem;
+	padding: 0.7rem 3%;
+	border-radius: 0.5rem;
+}
+
+.ul_list {
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input_checkbox {
+	width: 18px;
+	height: 18px;
+	border-radius: 2px;
+	border: solid #405189;
+	border-width: 2px;
+}
+.label_checkbox {
+	padding: 10px;
+}
+
+.li_holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(223, 223, 223);
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+.input_checkbox.checked + label {
+	text-decoration: line-through;
+	text-decoration-color: #3da5f4;
+}
+#edit {
+	color: #405189;
+}
+#remove {
+	color: rgb(216, 30, 30);
+	font-size: 1rem;
+}
+.btn {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.input_text {
+	color: rgb(118, 118, 118);
+	border: 0.5px solid rgb(190, 190, 190);
+	outline: none;
+	border-radius: 0.3em;
+}
+.input_text:focus {
+	border: 1px solid #405189;
+	transition: 0.1s;
+	border-radius: 0.3em;
+}
+
+.input_text {
+	display: none;
+}
+
+.input_text.editmod {
+	display: block;
+}
+
+.label_checkbox.editmod {
+	display: none;
+}
+.input_checkbox.editmod {
+	display: none;
+}
+#submit_edit {
+	color: green;
+}
